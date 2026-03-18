@@ -64,7 +64,8 @@ code .
 
 2. Open `main.ipynb` (or `main - Copy.ipynb`).
 3. Run the cells sequentially. The notebook will automatically:
-* Download the dataset via `kagglehub`.
+* Download the dataset via `kagglehub`.\
+* https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset
 * Preprocess the images (CLAHE, Blur, Resize to 224x224).
 * Load the CLIP model and tokenizers.
 * Run the evaluation and print the similarity scores.
