@@ -34,6 +34,11 @@ The model evaluates maize leaves across four primary categories:
 3. **Gray Leaf Spot**
 4. **Healthy**
 
+import kagglehub
+# Download latest version
+path = kagglehub.dataset_download("smaranjitghose/corn-or-maize-leaf-disease-dataset")
+print("Path to dataset files:", path)
+
 ## 🚀 Installation & Setup
 
 **1. Create a virtual environment (Optional but recommended)**
@@ -77,17 +82,17 @@ code .
 
 The current implementation achieves highly accurate alignment between visual features and textual descriptions.
 
-* **Overall Accuracy:** 93.8%
+* **Overall Accuracy:** 93.1%
 * **Cosine Similarity:** Utilized for exact vector matching between image embeddings and text embeddings.
 
 **Classification Report Summary:**
 | Disease Class      | Precision | Recall | F1-Score |
 | :------------------| :---------| :------| :--------|
-| **Blight**         | 0.86      | 0.95   | 0.90     |
-| **Common Rust**    | 1.00      | 0.96   | 0.98     |
-| **Gray Leaf Spot** | 0.86      | 0.74   | 0.79     |
+| **Blight**         | 0.85      | 0.93   | 0.89     |
+| **Common Rust**    | 0.98      | 0.97   | 0.98     |
+| **Gray Leaf Spot** | 0.85      | 0.70   | 0.77     |
 | **Healthy**        | 1.00      | 1.00   | 1.00     |
-| **Macro Average**  | **0.93**  |**0.91**| **0.92** |
+| **Macro Average**  | **0.93**  |**0.93**| **0.93** |
 
 ## 🔮 Future Scope
 
