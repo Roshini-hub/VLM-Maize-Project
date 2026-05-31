@@ -34,10 +34,12 @@ The model evaluates maize leaves across four primary categories:
 3. **Gray Leaf Spot**
 4. **Healthy**
 
+```bash
 import kagglehub
-# Download latest version
 path = kagglehub.dataset_download("smaranjitghose/corn-or-maize-leaf-disease-dataset")
 print("Path to dataset files:", path)
+
+```
 
 ## 🚀 Installation & Setup
 
